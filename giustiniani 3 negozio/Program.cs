@@ -11,25 +11,25 @@ namespace giustiniani_3_negozio
         static void Main(string[] args)
         {
             Console.WriteLine("Inserisci il prezzo del primo prodotto: ");
-            double prezzo1 = double.Parse(Console.ReadLine());
+            double p1 = double.Parse(Console.ReadLine());
             Console.WriteLine("Inserisci il prezzo del secondo prodotto: ");
-            double prezzo2 = double.Parse(Console.ReadLine());
+            double p2 = double.Parse(Console.ReadLine());
             double sconto;
             double scontato;
             double totale;
-            if (prezzo1 > prezzo2)
+            if (p1 > p2)
             {
-                sconto = prezzo2 / 100 * 50;
-                scontato = prezzo2 - sconto;
-                totale = prezzo1 + scontato;
-                Console.WriteLine($"Lo sconto è di {sconto} euro e il prezzo da pagare {totale} euro");
+                sconto = p2 / 100 * 50;
+                scontato = p2 - sconto;
+                totale = p1 + scontato;
+                Console.WriteLine($"Lo sconto è : {sconto} euro e il prezzo da pagare ora è di {totale} euro");
             }
             else
             {
-                sconto = prezzo1 / 100 * 50;
-                scontato = prezzo1 - sconto;
-                totale = prezzo2 + scontato;
-                Console.WriteLine($"Lo sconto è di {sconto} euro e il prezzo da pagare {totale} euro");
+                sconto = p1 / 100 * 50;
+                scontato = p1 - sconto;
+                totale = p2 + scontato;
+                Console.WriteLine($"Lo sconto è : {sconto} euro e il prezzo da pagare oraè di {totale} euro");
             }
             Console.ReadLine();
         }
